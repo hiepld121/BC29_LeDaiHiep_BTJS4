@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Bài tập Javascript buổi 4</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+  <body>
+
+    <!-- Bài 1
+    Đầu vào: nhập vào 3 số bất kỳ a, b, c
+    Xử lý: so sánh nếu a>b, max=a. Tiếp tục so sánh a vs c -> max=a hoặc c. So sánh tiếp số còn lại với b -> min
+    Đầu ra: xuất ra theo thứ tự min -> ... -> max -->
+    <div class="container py-5">
+      <div class="aq mb-3">
+          Bài 1: Nhập vào 3 số nguyên, xuất theo thứ tự tăng dần
+        </div>
+        Nhập 3 số bất kỳ: <br> <br>
+        <input class="mb-3" id="so1" type="text">
+        <br>
+        <input class="mb-3" id="so2" type="text">
+        <br>
+        <input class="mb-3" id="so3" type="text">
+        <br>
+      
+        
+        <button id="btnXuat" class="btn btn-primary mb-3">Xếp theo thứ tự tăng dần</button>
+        <br>
+        <div class="aq" id="soCuoi"></div>
+      </div>
+
+
+    <!-- Bài 2
+    Đầu vào: nhập người sử dụng
+    Xử lý: lấy dữ liệu nhập vào, chọn câu chào phù hợp với người đó
+    Đầu ra: xuất câu chào đúng người sử dụng đó -->
+    <div class="container py-5">
+      <div class="bq mb-3">
+        Bài 2: Viết chương trình chào hỏi cho 4 người dùng máy tính khác nhau: Bố, Mẹ, Anh, Em
+      </div>
+      Người sử dụng máy là: <br>
+      (Xin vui lòng viết hoa chữ đầu tiên, ví dụ: Bố)
+      <br>
+      <input class="mb-3" id="nguoiSuDung" type="text">
+      <div>
+      <button id="btnChao" class="btn btn-danger mb-3">Đăng nhập</button>
+    </div>
+      <br>
+      <div class="bq" id="xinChao"></div>
+
+
+<!-- Bài 3
+    Đầu vào:lấy dữ liệu 3 số nguyên nhập vào
+    Xử lý: xác định số nguyên chẵn, số nguyên lẻ
+    Đàu ra: xuất ra có bao nhiêu số nguyên chẵn, lẻ -->
+      
+    <div class="container py-5">
+      <div class="cq mb-3">
+          Bài 3: Nhập vào 3 số nguyên, có mấy số chẵn, lẻ
+        </div>
+        Nhập 3 số bất kỳ: <br> <br>
+        <input class="mb-3" id="soa" type="text">
+        <br>
+        <input class="mb-3" id="sob" type="text">
+        <br>
+        <input class="mb-3" id="soc" type="text">
+        <br>
+      
+        
+        <button id="btnDem" class="btn btn-warning mb-3">Xác định số chẵn, lẻ</button>
+        <br>
+        <div class="cq" id="soD"></div>
+      </div>
+
+
+      <!-- Bài 4
+      Đầu vào: lấy dữ liệu 3 cạnh
+      Xử lý: đều: 3 cạnh bằng nhau, cân: 2 cạnh bằng nhau, vuông: cạnh 1 bình phương + cạnh 2 bình phương = cạnh 3 bình phương -->
+      <div class="container py-5">
+        <div class="dq mb-3">
+            Bài 4: Xác định loại tam giác
+          </div>
+          Nhập độ dài 3 cạnh của tam giác: <br> <br>
+
+          Cạnh 1:
+          <input class="mb-3" id="canh1" type="text">
+          <br>
+          Cạnh 2:
+          <input class="mb-3" id="canh2" type="text">
+          <br>
+          Cạnh 3:
+          <input class="mb-3" id="canh3" type="text">
+          <br>
+        
+          
+          <button id="btnTamGiac" class="btn btn-success mb-3">Loại Tam Giác</button>
+          <br>
+          <div class="dq" id="tamGiac"></div>
+        </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
